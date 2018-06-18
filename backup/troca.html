@@ -1,0 +1,307 @@
+﻿<!-- ATENÇÃO Não copiar <table>, <tr> ou <td>, usar apenas o conteudo dentro delas e colar no gerenciador conforme a necessidade -->
+
+<!-- não copiar -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/_CSS/beta.geral.css" type="text/css" />
+<link href="/_CSS/kalunga.css" rel="stylesheet" type="text/css" media="Screen" />
+
+
+<style>
+
+#main-category{display: none;}
+#hotsite{ background: #ffffff url() top center no-repeat;  text-align:center;}
+#hotsite table, #hotsite td{vertical-align:text-top; text-align:center; }
+#hotsite .h_body{ width:740px; margin:0 auto; vertical-align:top; text-align:center;  }
+#hotsite .h_top	{ width:100%; height:160px; border: 0px solid red; vertical-align:top; text-align:center;}
+#hotsite .h_left { width: 180px;  margin-right: 5px; }
+#hotsite .h_right {}
+#hotsite .h_footer {height:20px;}
+.site-header-wrap {	margin-bottom:30px;	border-bottom:1px solid #cd9ad6;}
+.accordion, .accordion * {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.accordion {overflow:hidden;box-shadow:0px 0px 0px rgba(0,0,0,0.25);border-radius:3px;background:#ffffff;text-align: left;	margin: 0px;border:0px solid #ccc;}
+.accordion-section-title {	width:100%;	padding:10px 3px;	display:inline-block;	border-bottom:1px dashed #eaeaea;
+	background:#fff;	transition:all linear 0.15s;	font-size:14px;	color:#249BED; margin: 0 0 3px 0px;	font-weight: bold;}
+.accordion:hover{ background: #fff; color: #249BED; border-bottom:1px dashed #eaeaea; }
+.accordion .aup {	width:15px; height: 15px; display: block;float: left; margin: 0 5px 0 0; background: url(https://img.kalunga.com.br/adown.png) no-repeat top center; display: none;}
+.accordion .adown {	width:15px; height: 15px; display: block;float: left;  margin: 0 5px 0 0; background: url(https://img.kalunga.com.br/aleft.png) no-repeat top center;}
+.active .aup{display: block;}
+.active .adown{display: none;}
+.active{border-bottom:0px dashed #eaeaea;	text-decoration:none; background: #fff; color: #249BED;}
+.accordion-section:last-child .accordion-section-title {border-bottom:none;}
+.accordion-section-content {display:none;}
+.accordion-section-content a{width: 100%; height: 25px;	padding: 7px 2px; margin: 3px 0px; float: left;	color: #606060;	border-radius: 5px;}
+.accordion-section-content a:hover{background: #eaeaea;}
+.accordion-section-content .selecionado,.accordion-section-content .selecionado:hover{background: #fff; color: #249BED;}
+#main-category { width: 799px !important; margin-left: -6px; background-color: #ffffff; padding-left: 5px;}
+.container { width: 100%; min-width: 700px !important;}
+.bt-addcart{width: 115px !important;}
+.input-group { width: 43px !important;}
+.form-control{padding: 6px 0px !important;}
+
+#hotsite .g-left{float: left; width:  190px; text-align:left; }
+#hotsite .g-center{float: left; width: 70%; min-height: 400px;  border-left: 3px solid #249bed; border-right: 0px solid #eaeaea; margin: 9px 0 0 0px; padding: 0 0 0 3%;}
+
+#hotsite .g-right { background: #fff; border: 1px solid #eaeaea; padding: 10px 5px; position: absolute; top:190px; right: 7%; text-align: center; width: 200px; z-index: 10; border-radius: 7px; font-size: 12px;}
+
+#hotsite .g-right .btstyle{ margin: 5px auto; background: #239cec; text-align: center; font-weight: bold; padding: 9px; border-radius: 5px; color: #fff; font-size:12px; width: 160px;}
+#hotsite .g-right .btstyle:hover{ background-color: #00aeff; box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.3);}
+
+#hotsite h1{ font-size: 36px; margin: 0 0 2px 0; padding: 0; text-align:left; margin: 0 0 -10px 0;}
+#hotsite h2{ width:100%; padding:10px 3px; display:inline-block; border-bottom:1px dashed #eaeaea; background:#fff;	transition:all linear 0.15s; font-size:14px; color:#249BED; margin: 0 0 3px 0px; font-weight: bold; }
+#hotsite h2:hover{ background: #fff; color: #249BED; border-bottom:1px dashed #eaeaea; }
+#hotsite h2 .aup {	width:15px; height: 15px; display: block;float: left; margin: 0 5px 0 0; background: url(https://img.kalunga.com.br/adown.png) no-repeat top center; display: none;}
+#hotsite h2 .adown {	width:15px; height: 15px; display: block;float: left;  margin: 0 5px 0 0; background: url(https://img.kalunga.com.br/aleft.png) no-repeat top center;}
+#hotsite h2.active .aup{display: block;}
+#hotsite h2.active .adown{display: none;}
+
+#hotsite h3{ font-size: 24px; margin: 0 0 2px 0; padding: 0; text-align:left; margin: 0 0 -10px 0;}
+
+#hotsite .g-left .duvidas-menu{ width: 100%; height: 400px; margin: 10px 0 0 0; display: block; }
+#hotsite .g-left .duvidas-menu li{ width: 100%; border-bottom:0px dotted #eaeaea;  margin-top: -1px; }
+#hotsite .g-left .duvidas-menu li img{ margin: -5px 10px 0 10px; float: left;}
+#hotsite .g-left .duvidas-menu li a{ width: 100%; padding: 13px 0; color: #606060; font-size: 12px;height: 100%; font-weight: bold; display: block; }
+#hotsite .g-left .duvidas-menu li:hover{background: #249BED; }
+#hotsite .g-left .duvidas-menu li .b{display: none;}
+#hotsite .g-left .duvidas-menu li .a{display: block;}
+#hotsite .g-left .duvidas-menu li:hover a{color: #fff;}
+#hotsite .g-left .duvidas-menu li:hover .b{display: block;}
+#hotsite .g-left .duvidas-menu li:hover .a{display: none;}
+#hotsite .g-left .duvidas-menu .active {background: #249BED; }
+#hotsite .g-left .duvidas-menu .active a{color: #fff;}
+#hotsite .g-left .duvidas-menu .active .b{display: block;}
+#hotsite .g-left .duvidas-menu .active .a{display: none;}
+
+#hotsite .g-center p{ margin: 0 0 5px 0; font-size: 13px; color: #505050; line-height: 18px;}
+#hotsite .g-center strong{ vertical-align: top; line-height: 18px;}
+#hotsite .g-left p{ margin: 0 0 5px 0; font-size: 12px; color: #606060;}
+#hotsite .g-left h4{ margin: 15px 0 2px 0; font-size:12px;}
+#hotsite .g-left .btstyle{ margin: 5px 0; background: #239cec; text-align: center; font-weight: bold; padding: 9px; border-radius: 5px; color: #fff;font-size:12px; width: 140px;}
+
+#hotsite .accordion-section-content{padding: 0 0 0 10px; }
+
+
+
+#hotsite h2.accordion{ cursor: pointer; }
+#hotsite div.accordion{ display: none; }
+
+
+#hotsite .hoverlink{color:#249BED; width: 90px;}
+#hotsite .hoverlink:hover{ text-decoration: underline; background: #fff;}
+#hotsite .destaque{ border: 1px solid #c7edff; width: 100%; height: 80px; padding: 10px; background: #eefaff; color: #000; font-size: 14px;}
+
+</style>
+
+	<script type="text/javascript" src="//scripts.kalunga.com.br/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('h2.accordion').each(function(){
+			$(this).click(function(e){
+				var content = $(this).next('div.accordion:eq(0)');
+				$('div.accordion').not(content).slideUp(500);
+
+				var el = $(this);
+				
+				content.slideToggle(500, function(){
+					var top = el.position().top;
+					$('body').animate({ scrollTop: top },600);
+				});
+				
+				e.preventDefault();
+			});
+		});
+	});
+	</script>
+
+<script type="text/javascript">
+
+	$("#acc").click(function() {
+	 $("#acc").toggleClass("active");
+	 });
+
+	$("#acc1").click(function() {
+	 $("#acc1").toggleClass("active");
+	 });
+	 
+	$("#acc2").click(function() {
+	 $("#acc2").toggleClass("active");
+	 });
+
+	$("#acc3").click(function() {
+	 $("#acc3").toggleClass("active");
+	 });
+
+	$("#acc4").click(function() {
+	 $("#acc4").toggleClass("active");
+	 });
+
+	$("#acc5").click(function() {
+	 $("#acc5").toggleClass("active");
+	 });	 
+
+	$("#acc6").click(function() {
+	 $("#acc6").toggleClass("active");
+	 });
+
+	$("#acc7").click(function() {
+	 $("#acc7").toggleClass("active");
+	 });
+
+	$("#acc8").click(function() {
+	 $("#acc8").toggleClass("active");
+	 });
+
+	$("#acc9").click(function() {
+	 $("#acc9").toggleClass("active");
+	 });	 
+	 	 
+	$("#acc10").click(function() {
+	 $("#acc10").toggleClass("active");
+	 });
+
+	$("#acc11").click(function() {
+	 $("#acc11").toggleClass("active");
+	 });
+
+	$("#acc12").click(function() {
+	 $("#acc12").toggleClass("active");
+	 });
+
+	$("#acc13").click(function() {
+	 $("#acc13").toggleClass("active");
+	 });	 
+	 	 
+	 
+	 
+</script>		
+		
+
+
+
+
+</head>
+<body>
+
+
+<div id="hotsite">
+  <table width="200" class="h_body">
+    <tr>
+      <td colspan="3" class="h_top">
+		
+		
+		
+		
+		
+		
+		<div class="entrelinha_1" ></div>
+		
+		<h1><img src="https://img.kalunga.com.br/ico-duvidas.gif" style="float: left;" />Dúvidas</h1>
+
+		<div class="entrelinha_0 dashed" ></div>	  
+	  	<div class="entrelinha_1" ></div>	  
+		
+	  
+<div class="g-left" style="padding-top:0">	  
+	
+	<ul class="duvidas-menu">
+		<li><a href="/especial/duvidas/duvidas.html" alt="Como Funciona a loja?"><img class="a" src="https://img.kalunga.com.br/i-loja.png"> <img class="b" src="https://img.kalunga.com.br/i-loja1.png">Como Funciona a loja?</a></li>
+		<li><a href="/especial/duvidas/cadastro.html" alt="Cadastro"><img class="a" src="https://img.kalunga.com.br/i-login.png"><img class="b" src="https://img.kalunga.com.br/i-login1.png">Cadastro</a></li>
+		<li><a href="/especial/duvidas/precos.html" alt="Preços e Pagamentos"><img class="a" src="https://img.kalunga.com.br/i-pagamento.png"><img class="b" src="https://img.kalunga.com.br/i-pagamento1.png">Preços e Pagamentos</a></li>
+		<li><a href="/especial/duvidas/entrega.html" alt="Processo de Entrega"><img class="a" src="https://img.kalunga.com.br/i-entrega.png"><img class="b" src="https://img.kalunga.com.br/i-entrega1.png">Pedidos e Entrega</a></li>
+		<li class="active"><a href="/especial/duvidas/troca.html" alt="Troca e Devolução"><img class="a" src="https://img.kalunga.com.br/i-troca.png"><img class="b" src="https://img.kalunga.com.br/i-troca1.png">Troca e Devolução</a></li>
+		<li><a href="/especial/duvidas/seguranca.html" alt="Segurança"><img class="a" src="https://img.kalunga.com.br/i-seguranca.png"><img class="b" src="https://img.kalunga.com.br/i-seguranca1.png">Segurança</a></li>
+		<li><a href="/especial/duvidas/nfe.html" alt="Nota Fiscal Eletrônica"><img class="a" src="https://img.kalunga.com.br/i-nfe.png"><img class="b" src="https://img.kalunga.com.br/i-nfe1.png">Nota Fiscal Eletrônica</a></li>
+		<li><a href="/especial/duvidas/download.html" alt="Venda por Download"><img class="a" src="https://img.kalunga.com.br/i-download.png"><img class="b" src="https://img.kalunga.com.br/i-download1.png">Venda por Download</a></li>		
+		<li><a href="/especial/duvidas/politica-de-privacidade.html" alt="Venda por Download"><img class="a" src="https://img.kalunga.com.br/i-politica-de-privacidade.png"><img class="b" src="https://img.kalunga.com.br/i-politica-de-privacidade1.png">Política de Privacidade</a></li>
+	</ul>	
+	
+</div>	  
+	    
+	  
+  
+ <div class="g-center" style="padding-top:0">	
+	
+	<h3>Troca e Devolução</h3>
+	<div class="entrelinha_3"></div>
+
+
+		
+<div class="exemplo">
+	<h2 id="acc" class="accordion">Estou insatisfeito com o produto que comprei pelo site. Como devolver? <div class="aup"></div><div class="adown"></div></h2>
+	<div class="accordion">
+
+		<p>Você deverá solicitar o cancelamento da compra em até <strong>7 (sete) dias úteis</strong>, a partir da data do recebimento da mercadoria, nos termos do Artigo 49 do Código de Defesa do Consumidor.
+		<br/><br/>
+		Não deverá haver violação do lacre da embalagem ou do equipamento se for o caso, ou qualquer indício que o mesmo foi usado, caso contrário o mesmo não será aceito.<br/><br/>
+		
+		O material deverá estar acompanhado da nota fiscal de compra.<br/>
+		O Custo da postagem ou coleta da mercadoria será de responsabilidade da Kalunga.<br/>
+		A restituição do valor do produto será em nome do comprador no caso do pagamento através de boleto ou transferência eletrônica, e o procedimento bancário pode levar até 5 dias úteis. No caso do pagamento com cartão de crédito, o estorno que poderá ser visualizado em em sua próxima fatura ou, dependendo da data do vencimento, na fatura seguinte.<br/>
+		A restituição do valor pago somente será contada após o reenvio do(s) produto(s) a nossa Central de Distribuição e efetuarmos a análise de suas Condições.<br/><br/>
+		A devolução não será aceita caso constatemos indícios de uso do(s) produto(s) ou se o mesmo não retornar na embalagem original, por esta razão não rasgue ou danifique a embalagem, manuais e acessórios.<br/><br/>
+		No caso de eventual atraso na restituição do valor do produto, levando em consideração a política de prazos e condições de reembolso estabelecidas neste site, a Kalunga se compromete a indenizar o consumidor no montante de 2% do valor, além de juros legais de 1% ao mês.<br/><br/>
+		</p>
+		
+		<div class="destaque">
+			<strong class="font_14">Informação Importante:</strong><br/>
+			Para solicitar a devolução de um produto ou o cancelamento da compra <br/>
+
+			<a class="hoverlink" target="_blank" href="/sack/devolucao">Clique neste link</a>
+		</div>
+
+	</div>	
+	<h2 id="acc1" class="accordion">Como faço para trocar um produto defeituoso?<div class="aup"></div><div class="adown"></div></h2>
+	<div class="accordion">
+
+		<p>Se, no ato da entrega do produto, você perceber que a embalagem do produto está danificada, sem a fita lacre, para que seja evitado problemas futuros, recuse o recebimento e nos avise imediatamente.<br/><br/>
+		
+		Para produtos que apresentarem defeito técnico ou de fabricação e sendo comunicado em até 7 (sete) dias úteis a partir da data do recebimento da mercadoria, faremos a troca imediata, observando os procedimentos abaixo.<br/><br/>
+		Após este prazo, buscaremos uma solução junto ao fabricante e/ou assistência técnica no prazo de até 30 dias (conforme art. 18 parágrafo 1º do Código de Defesa do Consumidor).<br/><br/>
+		
+		<a href="/fornecedores" class="linkhover" target="_blank">Clique aqui para ver a lista de contatos dos Fabricantes</a><br/><br/>
+		
+		Para que a troca ou a devolução do produto seja feita, deverá estar nas seguintes condições:<br/><br/>
+		
+		- O material deverá estar acompanhado da nota fiscal.<br/><br/>
+		- Só aceitaremos devolução se a mercadoria estiver perfeitamente acondicionada na embalagem original, e que estiver devidamente acompanhada de seus manuais e acessórios e certificados de garantia.<br/><br/>
+		- A troca por outro produto semelhante somente será contada após o reenvio do(s) produto(s) a nossa Central de Distribuição e efetuarmos a análise de suas condições.<br/><br/>
+		- A retirada da mercadoria será de responsabilidade Kalunga.<br/><br/>
+		
+		A troca somente será efetuada caso não constatemos indícios de mal uso do(s) produto(s) ou se o mesmo retornar na embalagem original, por este motivo solicitamos que não seja rasgada nem danificada. Caso isto ocorra, enviaremos o(s) produto(s) para o endereço de entrega, e neste caso teremos o direito de nova cobrança de frete.<br/><br/>
+		</p>
+		<p>
+		<div class="destaque">
+			<strong class="font_14">Informação Importante:</strong><br/>
+			Para solicitar a devolução de um produto ou o cancelamento da compra <br/>
+
+			<a class="hoverlink" target="_blank" href="/sack/devolucao">Clique neste link</a>
+		</div>	<br/><br/>
+		</p>		
+	
+	</div>	
+
+</div>		
+			
+	<div class="entrelinha_4" ></div>
+	
+	
+		
+	
+      </td>
+    </tr>
+    <tr>
+      <td  class="h_left"></td>
+      <td  class="h_center"></td>
+      <td class="h_right"></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="h_footer"></td>
+    </tr>
+  </table>
+</div>
+
+
+</body>
+</html>

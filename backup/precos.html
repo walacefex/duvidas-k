@@ -1,0 +1,422 @@
+﻿<!-- ATENÇÃO Não copiar <table>, <tr> ou <td>, usar apenas o conteudo dentro delas e colar no gerenciador conforme a necessidade -->
+
+<!-- não copiar -->
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" href="/_CSS/beta.geral.css" type="text/css" />
+<link href="/_CSS/kalunga.css" rel="stylesheet" type="text/css" media="Screen" />
+
+
+<style>
+
+#main-category{display: none;}
+#hotsite{ background: #ffffff url() top center no-repeat;  text-align:center;}
+#hotsite table, #hotsite td{vertical-align:text-top; text-align:center; }
+#hotsite .h_body{ width:740px; margin:0 auto; vertical-align:top; text-align:center;  }
+#hotsite .h_top	{ width:100%; height:160px; border: 0px solid red; vertical-align:top; text-align:center;}
+#hotsite .h_left { width: 180px;  margin-right: 5px; }
+#hotsite .h_right {}
+#hotsite .h_footer {height:20px;}
+.site-header-wrap {	margin-bottom:30px;	border-bottom:1px solid #cd9ad6;}
+.accordion, .accordion * {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.accordion {overflow:hidden;box-shadow:0px 0px 0px rgba(0,0,0,0.25);border-radius:3px;background:#ffffff;text-align: left;	margin: 0px;border:0px solid #ccc;}
+.accordion-section-title {	width:100%;	padding:10px 3px;	display:inline-block;	border-bottom:1px dashed #eaeaea;
+	background:#fff;	transition:all linear 0.15s;	font-size:14px;	color:#249BED; margin: 0 0 3px 0px;	font-weight: bold;}
+.accordion:hover{ background: #fff; color: #249BED; border-bottom:1px dashed #eaeaea; }
+.accordion .aup {	width:15px; height: 15px; display: block;float: left; margin: 0 5px 0 0; background: url(//img.kalunga.com.br/adown.png) no-repeat top center; display: none;}
+.accordion .adown {	width:15px; height: 15px; display: block;float: left;  margin: 0 5px 0 0; background: url(//img.kalunga.com.br/aleft.png) no-repeat top center;}
+.active .aup{display: block;}
+.active .adown{display: none;}
+.active{border-bottom:0px dashed #eaeaea;	text-decoration:none; background: #fff; color: #249BED;}
+.accordion-section:last-child .accordion-section-title {border-bottom:none;}
+.accordion-section-content {display:none;}
+.accordion-section-content a{width: 100%; height: 25px;	padding: 7px 2px; margin: 3px 0px; float: left;	color: #606060;	border-radius: 5px;}
+.accordion-section-content a:hover{background: #eaeaea;}
+.accordion-section-content .selecionado,.accordion-section-content .selecionado:hover{background: #fff; color: #249BED;}
+#main-category { width: 799px !important; margin-left: -6px; background-color: #ffffff; padding-left: 5px;}
+.container { width: 100%; min-width: 700px !important;}
+.bt-addcart{width: 115px !important;}
+.input-group { width: 43px !important;}
+.form-control{padding: 6px 0px !important;}
+
+#hotsite .g-left{float: left; width:  190px; text-align:left; }
+#hotsite .g-center{float: left; width: 70%; min-height: 400px;  border-left: 3px solid #249bed; border-right: 0px solid #eaeaea; margin: 9px 0 0 0px; padding: 0 0 0 3%;}
+
+#hotsite .g-right { background: #fff; border: 1px solid #eaeaea; padding: 10px 5px; position: absolute; top:190px; right: 7%; text-align: center; width: 200px; z-index: 10; border-radius: 7px; font-size: 12px;}
+
+#hotsite .g-right .btstyle{ margin: 5px auto; background: #239cec; text-align: center; font-weight: bold; padding: 9px; border-radius: 5px; color: #fff; font-size:12px; width: 160px;}
+#hotsite .g-right .btstyle:hover{ background-color: #00aeff; box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.3);}
+
+#hotsite h1{ font-size: 36px; margin: 0 0 2px 0; padding: 0; text-align:left; margin: 0 0 -10px 0;}
+#hotsite h2{ width:100%; padding:10px 3px; display:inline-block; border-bottom:1px dashed #eaeaea; background:#fff;	transition:all linear 0.15s; font-size:14px; color:#249BED; margin: 0 0 3px 0px; font-weight: bold; }
+#hotsite h2:hover{ background: #fff; color: #249BED; border-bottom:1px dashed #eaeaea; }
+#hotsite h2 .aup {	width:15px; height: 15px; display: block;float: left; margin: 0 5px 0 0; background: url(//img.kalunga.com.br/adown.png) no-repeat top center; display: none;}
+#hotsite h2 .adown {	width:15px; height: 15px; display: block;float: left;  margin: 0 5px 0 0; background: url(//img.kalunga.com.br/aleft.png) no-repeat top center;}
+#hotsite h2.active .aup{display: block;}
+#hotsite h2.active .adown{display: none;}
+
+#hotsite h3{ font-size: 24px; margin: 0 0 2px 0; padding: 0; text-align:left; margin: 0 0 -10px 0;}
+
+#hotsite .g-left .duvidas-menu{ width: 100%; height: 400px; margin: 10px 0 0 0; display: block; }
+#hotsite .g-left .duvidas-menu li{ width: 100%; border-bottom:0px dotted #eaeaea;  margin-top: -1px; }
+#hotsite .g-left .duvidas-menu li img{ margin: -5px 10px 0 10px; float: left;}
+#hotsite .g-left .duvidas-menu li a{ width: 100%; padding: 13px 0; color: #606060; font-size: 12px;height: 100%; font-weight: bold; display: block; }
+#hotsite .g-left .duvidas-menu li:hover{background: #249BED; }
+#hotsite .g-left .duvidas-menu li .b{display: none;}
+#hotsite .g-left .duvidas-menu li .a{display: block;}
+#hotsite .g-left .duvidas-menu li:hover a{color: #fff;}
+#hotsite .g-left .duvidas-menu li:hover .b{display: block;}
+#hotsite .g-left .duvidas-menu li:hover .a{display: none;}
+#hotsite .g-left .duvidas-menu .active {background: #249BED; }
+#hotsite .g-left .duvidas-menu .active a{color: #fff;}
+#hotsite .g-left .duvidas-menu .active .b{display: block;}
+#hotsite .g-left .duvidas-menu .active .a{display: none;}
+
+#hotsite .g-center p{ margin: 0 0 5px 0; font-size: 13px; color: #505050; line-height: 18px;}
+#hotsite .g-center strong{ vertical-align: top; line-height: 18px;}
+#hotsite .g-left p{ margin: 0 0 5px 0; font-size: 12px; color: #606060;}
+#hotsite .g-left h4{ margin: 15px 0 2px 0; font-size:12px;}
+#hotsite .g-left .btstyle{ margin: 5px 0; background: #239cec; text-align: center; font-weight: bold; padding: 9px; border-radius: 5px; color: #fff;font-size:12px; width: 140px;}
+
+#hotsite .accordion-section-content{padding: 0 0 0 10px; }
+
+
+
+#hotsite h2.accordion{ cursor: pointer; }
+#hotsite div.accordion{ display: none; }
+
+
+#hotsite .hoverlink{color:#249BED; width: 90px;}
+#hotsite .hoverlink:hover{ text-decoration: underline; background: #fff;}
+
+
+</style>
+
+	<script type="text/javascript" src="//scripts.kalunga.com.br/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('h2.accordion').each(function(){
+			$(this).click(function(e){
+				var content = $(this).next('div.accordion:eq(0)');
+				$('div.accordion').not(content).slideUp(500);
+
+				var el = $(this);
+				
+				content.slideToggle(500, function(){
+					var top = el.position().top;
+					$('body').animate({ scrollTop: top },600);
+				});
+				
+				e.preventDefault();
+			});
+		});
+		$('#sb-nav-close').click(function(){ parent.Shadowbox.close(); });
+	});
+	</script>
+
+<script type="text/javascript">
+
+	$("#acc").click(function() {
+	 $("#acc").toggleClass("active");
+	 });
+
+	$("#acc1").click(function() {
+	 $("#acc1").toggleClass("active");
+	 });
+	 
+	$("#acc2").click(function() {
+	 $("#acc2").toggleClass("active");
+	 });
+
+	$("#acc3").click(function() {
+	 $("#acc3").toggleClass("active");
+	 });
+
+	$("#acc4").click(function() {
+	 $("#acc4").toggleClass("active");
+	 });
+
+	$("#acc5").click(function() {
+	 $("#acc5").toggleClass("active");
+	 });	 
+
+	$("#acc6").click(function() {
+	 $("#acc6").toggleClass("active");
+	 });
+
+	$("#acc7").click(function() {
+	 $("#acc7").toggleClass("active");
+	 });
+
+	$("#acc8").click(function() {
+	 $("#acc8").toggleClass("active");
+	 });
+
+	$("#acc9").click(function() {
+	 $("#acc9").toggleClass("active");
+	 });	 
+	 	 
+
+	 
+</script>		
+		
+
+
+
+
+</head>
+<body>
+
+
+<div id="hotsite">
+  <table width="200" class="h_body">
+    <tr>
+      <td colspan="3" class="h_top">
+		
+		
+		
+		
+		
+		
+		<div class="entrelinha_1" ></div>
+		
+		<h1><img src="https://img.kalunga.com.br/ico-duvidas.gif" style="float: left;" />Dúvidas</h1>
+
+		<div class="entrelinha_0 dashed" ></div>	  
+	  	<div class="entrelinha_1" ></div>	  
+		
+	  
+<div class="g-left" style="padding-top:0">	  
+	
+	<ul class="duvidas-menu">
+		<li><a href="/especial/duvidas/duvidas.html" alt="Como Funciona a loja?"><img class="a" src="https://img.kalunga.com.br/i-loja.png"> <img class="b" src="https://img.kalunga.com.br/i-loja1.png">Como Funciona a loja?</a></li>
+		<li><a href="/especial/duvidas/cadastro.html" alt="Cadastro"><img class="a" src="https://img.kalunga.com.br/i-login.png"><img class="b" src="https://img.kalunga.com.br/i-login1.png">Cadastro</a></li>
+		<li class="active"><a href="/especial/duvidas/precos.html" alt="Preços e Pagamentos"><img class="a" src="https://img.kalunga.com.br/i-pagamento.png"><img class="b" src="https://img.kalunga.com.br/i-pagamento1.png">Preços e Pagamentos</a></li>
+		<li><a href="/especial/duvidas/entrega.html" alt="Processo de Entrega"><img class="a" src="https://img.kalunga.com.br/i-entrega.png"><img class="b" src="https://img.kalunga.com.br/i-entrega1.png">Pedidos e Entrega</a></li>
+		<li><a href="/especial/duvidas/troca.html" alt="Troca e Devolução"><img class="a" src="https://img.kalunga.com.br/i-troca.png"><img class="b" src="https://img.kalunga.com.br/i-troca1.png">Troca e Devolução</a></li>
+		<li><a href="/especial/duvidas/seguranca.html" alt="Segurança"><img class="a" src="https://img.kalunga.com.br/i-seguranca.png"><img class="b" src="https://img.kalunga.com.br/i-seguranca1.png">Segurança</a></li>
+		<li><a href="/especial/duvidas/nfe.html" alt="Nota Fiscal Eletrônica"><img class="a" src="https://img.kalunga.com.br/i-nfe.png"><img class="b" src="https://img.kalunga.com.br/i-nfe1.png">Nota Fiscal Eletrônica</a></li>
+		<li><a href="/especial/duvidas/download.html" alt="Venda por Download"><img class="a" src="https://img.kalunga.com.br/i-download.png"><img class="b" src="https://img.kalunga.com.br/i-download1.png">Venda por Download</a></li>
+		<li><a href="/especial/duvidas/politica-de-privacidade.html" alt="Venda por Download"><img class="a" src="https://img.kalunga.com.br/i-politica-de-privacidade.png"><img class="b" src="https://img.kalunga.com.br/i-politica-de-privacidade1.png">Política de Privacidade</a></li>		
+	</ul>	
+	
+</div>	  
+	    
+	  
+  
+ <div class="g-center" style="padding-top:0">	
+	
+	<h3>Preços e formas de Pagamento na loja virtual</h3>
+	<div class="entrelinha_3"></div>
+
+
+		
+<div class="exemplo">
+	<h2 id="acc" class="accordion">Qual a validade dos preços divulgados no site? <div class="aup"></div><div class="adown"></div></h2>
+	<div class="accordion">
+
+		<p>Os preços e promoções dos produtos divulgados no site da Kalunga podem <strong>sofrer alteração a qualquer momento</strong> sem aviso prévio.</p><br/><br/>
+
+	</div>	
+	<h2 id="acc1" class="accordion">As promoções são iguais em toda Rede Kalunga?<div class="aup"></div><div class="adown"></div></h2>
+	<div class="accordion">
+
+		<p>Os preços <strong>normalmente</strong> são iguais aos praticados nas lojas da Rede Kalunga, exceto produtos com promoções exclusivas para lojas físicas ou para a Loja Virtual.<br/><br/>
+		Os produtos com <strong>preço exclusivo para a loja virtual</strong> são sinalizados com esse selo próximo imagem do produto: <br/>
+		<div class="selos precoexclusivo"  style="float: left;"></div>				
+		</p><br/><br/>	
+	
+	</div>	
+	<h2 id="acc2" class="accordion">Quais as Formas de Pagamento?<div class="aup"></div><div class="adown"></div></h2>
+
+	<div class="accordion">
+		
+		
+		<p>
+			O site da Kalunga aceita as seguintes formas de pagamento:<br/><br/>
+			</p>
+			
+			<div class="entrelinha_0 line"></div>					
+			<div class="entrelinha_2"></div>					
+			<div class="ico_checkbox ico_faturado"></div>
+			<p>
+			<strong style="font-size: 18px;"> Compra Faturada </strong><br/><br/>
+			É uma <strong>forma de pagamento exclusiva da Kalunga</strong>, para as empresas que querem agilidade no processo de compra e facilidade de pagamento.<br/><br/>
+			
+			<strong>Formas de pagamento disponíveis*</strong> <br/>
+			30 dias | 40 dias | 30/60 dias | 30/60/90 dias<br/>
+			
+			<span class="font_11 cinzaclaro">* O valor mínimo para faturamento por parcela é de R$ 50,00 e está disponível apenas para Pessoa Jurídica.</span><br/><br/>
+			
+			A liberação do pedido faturado é <strong>IMEDIATA</strong> caso o valor do pedido não exceda o limite pré-estipulado. 
+			
+			Se você já é um cliente Kalunga com Limite e Cadastro aprovados para Compra Faturada, esta opção estará ativa na tela de pagamento do site.<br/><br/>
+			
+			<strong>Para fazer seu cadastro e solicitar o Crédito para Compra Faturada <a class="hoverlink" href="/cadastroFaturadoPJ.aspx">clique aqui</a></strong>
+			</p>
+			<div class="entrelinha_1"></div>
+			<p>
+			Primeira compra Faturada: a empresa deverá ter no mínimo 6 meses de atividade<br/><br/>
+			
+			<strong>Importante</strong>: A empresa deverá apresentar/ informar até 3 (três) pessoas autorizadas/credênciadas a comprar em seu nome: Nome, data de nascimento, CPF, e função na empresa<br/><br/>
+			</p>
+			
+			<div class="entrelinha_0 line"></div>					
+			<div class="entrelinha_2"></div>
+			<div class="ico_checkbox ico_cartaocredito"></div>
+			<p>
+			<strong style="font-size: 18px;"> Cartão de Crédito</strong><br/><br/>
+			Trabalhamos com os Cartões <strong>Visa, Mastercard, American Express, Diners, Hipercard e Elo</strong>.<br/><br/>
+			
+			A liberação do pedido pago com cartão de crédito será <strong>IMEDIATA*</strong>, caso não haja divergência ou irregularidade nos dados.<br/><br/>
+			
+			• Para compras até R$ 149,99 o pagamento será em parcela única.<br/>
+			• Para compras de R$ 150,00 ou mais o parcelamento poderá ser feito em até 3 vezes (exceto para alguns produtos e cartões Amex conforme nota abaixo).<br/>
+			• Para itens que estejam em promoção, independente do valor da compra, o parcelamento PODERÁ ser de 3 até 12 vezes **(exceto cartões Amex conforme nota abaixo).<br/>
+			• Compras acima de R$ 150,00 também poderão ser pagas em até 12 vezes COM JUROS.<br/><br/>
+			
+			<strong>OBS.</strong>: Se na sua compra houver um único produto que NÃO possa ser parcelado, toda sua compra terá de ser à vista. Recomendamos neste caso que você faça duas compras, separando os produtos.<br/><br/>
+			
+			<span class="font_11">* Após a liberação IMEDIATA do pedido, o processamento do mesmo se dá somente nos dias úteis.<br/>
+			** Para Cartões American Express Corporate, American Express Credit (Azul), Sollo e Cartões American Express emitidos no exterior, os pagamentos serão somente em parcela única, independente da promoção ou valor da compra.</span><br/><br/>
+			</p>					
+			
+			<div class="entrelinha_0 line"></div>					
+			<div class="entrelinha_2"></div>
+			<div class="ico_checkbox ico_boleto"></div>
+			<p>
+			<strong style="font-size: 18px;"> Boleto Bancário</strong><br/><br/>
+			Você poderá fazer a impressão do boleto em sua própria impressora. Caso você não tenha impressora, ou a mesma esteja sem tinta, você pode pagar com a inclusão da seqüência numérica do código de barras. O pagamento pode ser efetuado em qualquer banco dentro do prazo, ou via Internet.<br/><br/>
+			
+			O vencimento do boleto será de 3 dias após a finalização do pedido.<br/><br/>
+			
+			A liberação da compra para entrega de acordo com o prazo informado no site será efetuada após a confirmação da operação pelo banco que pode ocorrer em até 24 horas após o pagamento. Caso o pagamento seja efetuado com cheque, o prazo poderá ser maior, pois aguardaremos a compensação. <br/><br/>
+			</p>						
+
+			<div class="entrelinha_0 line"></div>					
+			<div class="entrelinha_2"></div>
+			<div class="ico_checkbox ico_debitoconta"></div>
+			<p>
+			<strong style="font-size: 18px;"> Débito Online</strong><br/><br/>
+			</p>
+			<div class="ico_pgto ico_itau" style="float: left; margin: -5px 10px 0 0"></div> 
+			<p>
+			<strong class="font_14">Itaú Shopline</strong><br/><br/>
+
+			Para clientes do Itaú com acesso ao Itaú Bankline. Pagamento realizado através de transferência eletrônica.<br/>
+			O banco envia a confirmação de pagamento à Kalunga no dia seguinte, portanto acrescente 1 dia útil ao prazo de entrega informado no site.<br/><br/>
+			</p>
+			<div class="ico_pgto ico_bb" style="float: left;  margin: -5px 10px 0 0"></div> 
+			<p>
+			<strong class="font_14">Banco do Brasil</strong><br/><br/>
+
+			Para clientes do Banco do Brasil com acesso ao BB Online. Pagamento realizado através de transferência eletrônica. 
+			O banco envia a confirmação de pagamento à Kalunga no dia seguinte, portanto acrescente 1 dia útil ao prazo de entrega informado no site.  <br/><br/>
+			</p>						
+			
+			<div class="entrelinha_0 line"></div>					
+			<div class="entrelinha_2"></div>
+			<div class="ico_checkbox ico_cartaodebito"></div>
+			<p>
+			<strong style="font-size: 18px;"> Cartão de Débito</strong><br/><br/>
+			
+			Agora você também pode pagar suas compras na Kalunga.com com seu Cartão de Débito!<br/><br/>
+			
+			São aceitos cartões emitidos pelo Banco do Brasil, Bradesco, HSBC e Santander. <br/><br/>
+			
+			A liberação do pedido é imediata após a confirmação do pagamento pelo banco, que pode levar menos de 1 minuto.<br/><br/>
+			</p>	
+
+
+			<div class="entrelinha_0 line"></div>					
+			<div class="entrelinha_2"></div>
+			<div class="ico_checkbox ico_meuscreditos"></div>
+			<p>
+			<strong style="font-size: 18px;"> Meus Créditos</strong><br/><br/>
+			
+			No caso de você ter devolvido algum pedido para a Kalunga, o valor do(s) item(s) devolvido(s) se transforma(m) em crédito(s) que você reutiliza no site como forma de pagamento.<br/><br/>
+			
+			Esses valores poderão ser usados para pagamento de um novo pedido no site.<br/><br/>
+			
+			Caso o valor do novo pedido seja superior ao crédito, você pode completar com outra forma de pagamento (cartão de crédito, boleto bancário, etc.) <br/><br/>
+			</p>						
+	
+		<br/><br/>
+	</div>	
+
+	<h2 id="acc3" class="accordion">Como pagar o meu Boleto Bancário se não posso imprimir? <div class="aup"></div><div class="adown"></h2>
+	<div class="accordion">
+
+		<p>Quando você exibe o boleto bancário na tela , anote a seqüência numérica que significam o código de barras do boleto. Por intermédio destes algarismos, dirija-se a uma agência da rede bancária que aceite, ou por intermédio da Internet, você poderá efetuar o pagamento.</p><br/><br/>
+	
+	
+	</div>	
+
+	<h2 id="acc4" class="accordion">Como faço para imprimir uma 2ª via do Boleto?  <div class="aup"></div><div class="adown"></div></h2>
+	<div class="accordion">
+			<p>Acesse o link "<strong>Minhas Compras</strong>" (localizado no topo da página). <br/>
+			Selecione o pedido desejado. <br/>E na página de detalhes do pedido clique no botão<br/>
+			<div class="bt-cinza cursor-pointer" style="width: 120px" ><i class="icones-btn icones-btn-impressora"></i>Imprimir Boleto</div>
+			</p><br/><br/>
+	</div>	
+	
+	<h2 id="acc5" class="accordion">Qual o valor mínimo para efetuar um pedido?  <div class="aup"></div><div class="adown"></div></h2>
+	<div class="accordion">
+		<p>Não exigimos valor mínimo para compras na Internet.<br/>
+		<strong>As compras acima de R$ 250,00 (duzentos e cinquenta reais), para Grande São Paulo e Rio de Janeiro ganham Frete Grátis.</strong>
+		</p><br/><br/>
+	</div>		
+	
+	<h2 id="acc6" class="accordion">Como faço para comprar Faturado?  <div class="aup"></div><div class="adown"></div></h2>
+	<div class="accordion">
+
+		<p>
+		É uma <strong>forma de pagamento exclusiva da Kalunga</strong>, para as empresas que querem agilidade no processo de compra e facilidade de pagamento.<br/><br/>
+		
+		<strong>Formas de pagamento disponíveis*</strong> <br/>
+		30 dias | 40 dias | 30/60 dias | 30/60/90 dias<br/>
+		
+		<span class="font_11 cinzaclaro">* O valor mínimo para faturamento por parcela é de R$ 50,00 e está disponível apenas para Pessoa Jurídica.</span><br/><br/>
+		
+		A liberação do pedido faturado é <strong>IMEDIATA</strong> caso o valor do pedido não exceda o limite pré-estipulado. 
+		
+		Se você já é um cliente Kalunga com Limite e Cadastro aprovados para Compra Faturada, esta opção estará ativa na tela de pagamento do site.<br/><br/>
+		
+		<strong>Para fazer seu cadastro e solicitar o Crédito para Compra Faturada <a class="hoverlink" href="/cadastroFaturadoPJ.aspx">clique aqui</a></strong>
+		</p>
+		<div class="entrelinha_1"></div>
+		<p>
+		Primeira compra Faturada: a empresa deverá ter no mínimo 6 meses de atividade<br/><br/>
+		
+		<strong>Importante</strong>: A empresa deverá apresentar/ informar até 3 (três) pessoas autorizadas/credênciadas a comprar em seu nome: Nome, data de nascimento, CPF, e função na empresa<br/><br/>
+		</p>
+		<br/><br/>	
+	
+	</div>			
+	
+
+</div>		
+			
+	<div class="entrelinha_4" ></div>
+	
+	
+		
+	
+      </td>
+    </tr>
+    <tr>
+      <td  class="h_left"></td>
+      <td  class="h_center"></td>
+      <td class="h_right"></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="h_footer"></td>
+    </tr>
+  </table>
+</div>
+
+
+</body>
+</html>
